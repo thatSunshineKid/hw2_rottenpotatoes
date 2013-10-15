@@ -1,3 +1,9 @@
+# worked through whole lab with chris acuna and adam sunshine
+# got help from many sites and took snipits from many sites
+# includeing github, stackOverflow, pastebin
+
+
+
 class MoviesController < ApplicationController
 
   def show
