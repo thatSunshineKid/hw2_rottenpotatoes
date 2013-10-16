@@ -1,6 +1,6 @@
-# worked through whole lab with chris acuna and adam sunshine
-# got help from many sites and took snipits from many sites
-# includeing github, stackOverflow, pastebin
+# worked through whole lab with Ryan Donat and Chris Acuna
+# got assistance from a variety of sources, including
+# Github, Pastebin, and StackOverflow
 
 
 
@@ -20,9 +20,9 @@ class MoviesController < ApplicationController
     sort = params[:sort] || session[:sort]
     case sort
     when 'title'
-	ordering, @title_header = {:order => :title}, 'hilite'
+	ordering,@title_header = {:order => :title}, 'hilite'
     when 'release_date'
-	ordering, @date_header = {:order => :release_date}, 'hilite'
+	ordering,@date_header = {:order => :release_date}, 'hilite'
     end
     @all_ratings = Movie.all_ratings
     @selected_ratings = params[:ratings] || session[:ratings] || {}
